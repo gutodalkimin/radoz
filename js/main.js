@@ -1,7 +1,6 @@
 jQuery(function($) {'use strict';
 
 	// Navigation Scroll
-
 	$('#tohash').on('click', function(){
 		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
 		return false;
@@ -200,6 +199,5 @@ jQuery(function($) {'use strict';
 			map: map
 		});
 	}
-	google.maps.event.addDomListener(window, 'load', initialize_map);
 
 });
